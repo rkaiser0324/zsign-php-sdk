@@ -119,7 +119,7 @@ abstract class ZohoSign{
 		return new RequestObject( $response->requests );
 	}
 
-	public static function updateRequest( $requestObject, array $files=null ){
+	public static function updateRequest( $requestObject, array $files=[] ){
 
 		if( is_a($requestObject, "RequestObject") ){
 			throw new SignException("not an object of 'RequestObject' class", -1);
